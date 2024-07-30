@@ -1,0 +1,334 @@
+[
+    {
+        "value": "ACCEPTANCE",
+        "explanation": "to be accepted as I am"
+    },
+    {
+        "value": "ACCURACY",
+        "explanation": "to be accurate in my opinions and beliefs"
+    },
+    {
+        "value": "ACHIEVEMENT",
+        "explanation": "to have important accomplishments"
+    },
+    {
+        "value": "ADVENTURE",
+        "explanation": "to have new and exciting experiences"
+    },
+    {
+        "value": "ATTRACTIVENESS",
+        "explanation": "to be physically attractive"
+    },
+    {
+        "value": "AUTHORITY",
+        "explanation": "to be in charge of and responsible for others"
+    },
+    {
+        "value": "AUTONOMY",
+        "explanation": "to be self-determined and independent"
+    },
+    {
+        "value": "BEAUTY",
+        "explanation": "to appreciate beauty around me"
+    },
+    {
+        "value": "CARING",
+        "explanation": "to take care of others"
+    },
+    {
+        "value": "CHALLENGE",
+        "explanation": "to take on difficult tasks and problems"
+    },
+    {
+        "value": "CHANGE",
+        "explanation": "to have a life full of change and variety"
+    },
+    {
+        "value": "COMFORT",
+        "explanation": "to have a pleasant and comfortable life"
+    },
+    {
+        "value": "COMMITMENT",
+        "explanation": "to make enduring, meaningful commitments"
+    },
+    {
+        "value": "COMPASSION",
+        "explanation": "to feel and act on concern for others"
+    },
+    {
+        "value": "CONTRIBUTION",
+        "explanation": "to make a lasting contribution in the world"
+    },
+    {
+        "value": "COOPERATION",
+        "explanation": "to work collaboratively with others"
+    },
+    {
+        "value": "COURTESY",
+        "explanation": "to be considerate and polite toward others"
+    },
+    {
+        "value": "CREATIVITY",
+        "explanation": "to have new and original ideas"
+    },
+    {
+        "value": "DEPENDABILITY",
+        "explanation": "to be reliable and trustworthy"
+    },
+    {
+        "value": "DUTY",
+        "explanation": "to carry out my duties and obligations"
+    },
+    {
+        "value": "ECOLOGY",
+        "explanation": "to live in harmony with the environment"
+    },
+    {
+        "value": "EXCITEMENT",
+        "explanation": "to have a life full of thrills and stimulation"
+    },
+    {
+        "value": "FAITHFULNESS",
+        "explanation": "to be loyal and true in relationships"
+    },
+    {
+        "value": "FAME",
+        "explanation": "to be known and recognized"
+    },
+    {
+        "value": "FAMILY",
+        "explanation": "to have a happy, loving family"
+    },
+    {
+        "value": "FITNESS",
+        "explanation": "to be physically fit and strong"
+    },
+    {
+        "value": "FLEXIBILITY",
+        "explanation": "to adjust to new circumstances easily"
+    },
+    {
+        "value": "FORGIVENESS",
+        "explanation": "to be forgiving of others"
+    },
+    {
+        "value": "FRIENDSHIP",
+        "explanation": "to have close, supportive friends"
+    },
+    {
+        "value": "FUN",
+        "explanation": "to play and have fun"
+    },
+    {
+        "value": "GENEROSITY",
+        "explanation": "to give what I have to others"
+    },
+    {
+        "value": "GENUINENESS",
+        "explanation": "to act in a manner that is true to who I am"
+    },
+    {
+        "value": "GOD’S WILL",
+        "explanation": "to seek and obey the will of God"
+    },
+    {
+        "value": "GROWTH",
+        "explanation": "to keep changing and growing"
+    },
+    {
+        "value": "HEALTH",
+        "explanation": "to be physically well and healthy"
+    },
+    {
+        "value": "HELPFULNESS",
+        "explanation": "to be helpful to others"
+    },
+    {
+        "value": "HONESTY",
+        "explanation": "to be honest and truthful"
+    },
+    {
+        "value": "HOPE",
+        "explanation": "to maintain a positive and optimistic outlook"
+    },
+    {
+        "value": "HUMILITY",
+        "explanation": "to be modest and unassuming"
+    },
+    {
+        "value": "HUMOR",
+        "explanation": "to see the humorous side of myself and the world"
+    },
+    {
+        "value": "INDEPENDENCE",
+        "explanation": "to be free from dependence on others"
+    },
+    {
+        "value": "INDUSTRY",
+        "explanation": "to work hard and well at my life tasks"
+    },
+    {
+        "value": "INNER PEACE",
+        "explanation": "to experience personal peace"
+    },
+    {
+        "value": "INTIMACY",
+        "explanation": "to share my innermost experiences with others"
+    },
+    {
+        "value": "JUSTICE",
+        "explanation": "to promote fair and equal treatment for all"
+    },
+    {
+        "value": "KNOWLEDGE",
+        "explanation": "to learn and contribute valuable knowledge"
+    },
+    {
+        "value": "LEISURE",
+        "explanation": "to take time to relax and enjoy"
+    },
+    {
+        "value": "LOVED",
+        "explanation": "to be loved by those close to me"
+    },
+    {
+        "value": "LOVING",
+        "explanation": "to give love to others"
+    },
+    {
+        "value": "MASTERY",
+        "explanation": "to be competent in my everyday activities"
+    },
+    {
+        "value": "MINDFULNESS",
+        "explanation": "to live conscious and mindful of the present moment"
+    },
+    {
+        "value": "MODERATION",
+        "explanation": "to avoid excesses and find a middle ground"
+    },
+    {
+        "value": "MONOGAMY",
+        "explanation": "to have one close, loving relationship"
+    },
+    {
+        "value": "NON-CONFORMITY",
+        "explanation": "to question and challenge authority and norms"
+    },
+    {
+        "value": "NURTURANCE",
+        "explanation": "to take care of and nurture others"
+    },
+    {
+        "value": "OPENNESS",
+        "explanation": "to be open to new experiences, ideas, and options"
+    },
+    {
+        "value": "ORDER",
+        "explanation": "to have a life that is well-ordered and organized"
+    },
+    {
+        "value": "PASSION",
+        "explanation": "to have deep feelings about ideas, activities, or people"
+    },
+    {
+        "value": "PLEASURE",
+        "explanation": "to feel good"
+    },
+    {
+        "value": "POPULARITY",
+        "explanation": "to be well-liked by many people"
+    },
+    {
+        "value": "POWER",
+        "explanation": "to have control over others"
+    },
+    {
+        "value": "PURPOSE",
+        "explanation": "to have meaning and direction in my life"
+    },
+    {
+        "value": "RATIONALITY",
+        "explanation": "to be guided by reason and logic"
+    },
+    {
+        "value": "REALISM",
+        "explanation": "to see and act realistically and practically"
+    },
+    {
+        "value": "RESPONSIBILITY",
+        "explanation": "to make and carry out responsible decisions"
+    },
+    {
+        "value": "RISK",
+        "explanation": "to take risks and chances"
+    }, 
+    {
+        "value": "ROMANCE",
+        "explanation": "to have intense, exciting love in my life"
+    },
+    {
+        "value": "SAFETY",
+        "explanation": "to be safe and secure"
+    },
+    {
+        "value": "SELF-ACCEPTANCE",
+        "explanation": "to accept myself as I am"
+    },
+    {
+        "value": "SELF-CONTROL",
+        "explanation": "to be disciplined in my own actions"
+    },
+    {
+        "value": "SELF-ESTEEM",
+        "explanation": "to feel good about myself"
+    },
+    {
+        "value": "SELF-KNOWLEDGE",
+        "explanation": "to have a deep and honest understanding of myself"
+    },
+    {
+        "value": "SERVICE",
+        "explanation": "to be of service to others"
+    },
+    {
+        "value": "SEXUALITY",
+        "explanation": "to have an active and satisfying sex life"
+    },
+    {
+        "value": "SIMPLICITY",
+        "explanation": "to live life simply, with minimal needs"
+    },
+    {
+        "value": "SOLITUDE",
+        "explanation": "to have time and space where I can be apart from others"
+    },
+    {
+        "value": "SPIRITUALITY",
+        "explanation": "to grow and mature spiritually"
+    },
+    {
+        "value": "STABILITY",
+        "explanation": "to have a life that stays fairly consistent"
+    },
+    {
+        "value": "TOLERANCE",
+        "explanation": "to accept and respect those who differ from me"
+    },
+    {
+        "value": "TRADITION",
+        "explanation": "to follow respected patterns of the past"
+    },
+    {
+        "value": "VIRTUE",
+        "explanation": "to live a morally pure and excellent life"
+    },
+    {
+        "value": "WEALTH",
+        "explanation": "to have plenty of money"
+    },
+    {
+        "value": "WORLD PEACE",
+        "explanation": "to work to promote peace in the world "
+    }
+]

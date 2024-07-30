@@ -1,0 +1,118 @@
+/* General body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  /* Container styling */
+  .container {
+    text-align: center;
+  }
+  
+  /* Card styling */
+  .card {
+    border: 1px solid #e0e0e0;
+    background-color: rgb(233, 161, 130);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  /* Explanation styling */
+  .card .explanation {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-top: 1px solid #e0e0e0;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Hover effect to display explanation */
+  .card:hover .explanation {
+    display: block;
+  }
+  
+  /* Button group styling */
+  .button-group button {
+    background-color: rgb(40, 63, 62);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button-group button:hover {
+    background-color: rgb(130, 78, 64);
+    transform: scale(1.05);
+  }
+  
+  /* Categories container styling */
+  #categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Category container styling */
+  .category-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Ensures each category box is the same width */
+  }
+  
+  /* Category title styling */
+  .category-title {
+    font-size: 1em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Georgia', serif;
+    border-bottom: 2px solid rgb(130, 78, 64);
+    padding-bottom: 5px;
+    display: inline-block;
+  }
+  
+  /* Category box styling */
+  .category {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    height: 350px;
+    width: 280px; /* Fixed width for uniform size */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  /* Add shadow on hover for category boxes */
+  .category:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
