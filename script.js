@@ -3,9 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const saveButton = document.createElement('button');
   saveButton.id = 'saveButton';
   saveButton.innerText = 'Save to PDF';
-  saveButton.style.position = 'fixed';
-  saveButton.style.top = '10px';
-  saveButton.style.right = '10px';
   document.body.appendChild(saveButton);
 
   // Define saveToPDF function
@@ -113,13 +110,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Modify the existing prepare button
+  // Create the prepare button
   const prepareButton = document.createElement('button');
   prepareButton.id = 'prepareButton';
   prepareButton.innerText = 'Prepare for ChatGPT';
-  prepareButton.style.position = 'fixed';
-  prepareButton.style.top = '50px';
-  prepareButton.style.right = '10px';
   document.body.appendChild(prepareButton);
 
   // Add event listener for the prepare button
