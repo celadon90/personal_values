@@ -104,32 +104,77 @@ document.addEventListener('DOMContentLoaded', () => {
 
     result += "Based on these personal values, please provide insights and suggestions for personal growth and development.";
 
-    // Create a textarea element to hold the result
-    const textArea = document.createElement('textarea');
-    textArea.value = result;
-    document.body.appendChild(textArea);
+    // Create chat interface
+    const chatInterface = document.createElement('div');
+    chatInterface.id = 'chatInterface';
+    chatInterface.style.position = 'fixed';
+    chatInterface.style.bottom = '10px';
+    chatInterface.style.right = '10px';
+    chatInterface.style.width = '300px';
+    chatInterface.style.height = '400px';
+    chatInterface.style.border = '1px solid #ccc';
+    chatInterface.style.borderRadius = '5px';
+    chatInterface.style.display = 'flex';
+    chatInterface.style.flexDirection = 'column';
+    chatInterface.innerHTML = `
+      <div id="chatMessages" style="flex: 1; overflow-y: auto; padding: 10px;"></div>
+      <textarea id="userInput" style="width: 100%; padding: 5px;" placeholder="Type your message..."></textarea>
+      <button id="sendMessage" style="width: 100%; padding: 5px;">Send</button>
+    `;
+    document.body.appendChild(chatInterface);
 
-    // Select and copy the text
-    textArea.select();
-    document.execCommand('copy');
+    const chatMessages = document.getElementById('chatMessages');
+    const userInput = document.getElementById('userInput');
+    const sendMessage = document.getElementById('sendMessage');
 
-    // Remove the textarea from the DOM
-    document.body.removeChild(textArea);
+    function addMessage(sender, message) {
+      const messageElement = document.createElement('div');
+      messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+      chatMessages.appendChild(messageElement);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
 
-    alert("Data prepared and copied to clipboard. You can now paste it into ChatGPT.");
+    sendMessage.addEventListener('click', () => {
+      const message = userInput.value.trim();
+      if (message) {
+        addMessage('You', message);
+        userInput.value = '';
+        
+        // Simulate ChatGPT response
+        setTimeout(() => {
+          addMessage('ChatGPT', "I'm a simulated ChatGPT response. To get an actual response, please copy your message and paste it into the real ChatGPT interface.");
+        }, 1000);
+      }
+    });
+
+    // Add the prepared data to the chat interface
+    addMessage('System', 'Prepared data for ChatGPT:');
+    addMessage('You', result);
   }
 
-  // Modify the existing save button or create a new one
+  // Modify the existing prepare button
   const prepareButton = document.createElement('button');
   prepareButton.id = 'prepareButton';
   prepareButton.innerText = 'Prepare for ChatGPT';
   prepareButton.style.position = 'fixed';
-  prepareButton.style.top = '50px';  // Position it below the save button
+  prepareButton.style.top = '50px';
   prepareButton.style.right = '10px';
   document.body.appendChild(prepareButton);
 
   // Add event listener for the prepare button
   prepareButton.addEventListener('click', prepareDataForChatGPT);
+
+  // Add background image
+  const backgroundStyle = document.getElementById('backgroundStyle');
+  backgroundStyle.textContent = `
+    body {
+      background-image: url('background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  `;
 
   fetch('values.json')
     .then(response => {
