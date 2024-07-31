@@ -75,6 +75,62 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add event listener for the save button
   saveButton.addEventListener('click', saveToPDF);
 
+  function prepareDataForChatGPT() {
+    const categories = ['very-important', 'important', 'not-important'];
+    let result = "Here are my categorized personal values:\n\n";
+
+    categories.forEach(category => {
+      const categoryElement = document.getElementById(category);
+      if (!categoryElement) {
+        console.warn(`Category element '${category}' not found`);
+        return;
+      }
+
+      const cards = categoryElement.querySelectorAll('.card');
+      result += `${category.toUpperCase().replace('-', ' ')}:\n`;
+
+      if (cards.length === 0) {
+        result += "No items in this category\n";
+      } else {
+        cards.forEach(card => {
+          const value = card.querySelector('strong').innerText;
+          const explanation = card.querySelector('.explanation').innerText;
+          result += `- ${value}: ${explanation}\n`;
+        });
+      }
+
+      result += "\n";
+    });
+
+    result += "Based on these personal values, please provide insights and suggestions for personal growth and development.";
+
+    // Create a textarea element to hold the result
+    const textArea = document.createElement('textarea');
+    textArea.value = result;
+    document.body.appendChild(textArea);
+
+    // Select and copy the text
+    textArea.select();
+    document.execCommand('copy');
+
+    // Remove the textarea from the DOM
+    document.body.removeChild(textArea);
+
+    alert("Data prepared and copied to clipboard. You can now paste it into ChatGPT.");
+  }
+
+  // Modify the existing save button or create a new one
+  const prepareButton = document.createElement('button');
+  prepareButton.id = 'prepareButton';
+  prepareButton.innerText = 'Prepare for ChatGPT';
+  prepareButton.style.position = 'fixed';
+  prepareButton.style.top = '50px';  // Position it below the save button
+  prepareButton.style.right = '10px';
+  document.body.appendChild(prepareButton);
+
+  // Add event listener for the prepare button
+  prepareButton.addEventListener('click', prepareDataForChatGPT);
+
   fetch('values.json')
     .then(response => {
       if (!response.ok) {
