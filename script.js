@@ -9,10 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(data => {
         console.log('Data loaded:', data); // Debugging line
         let index = 0;
-  
+        let cardDeck = [...data]; // Create a copy of the original data
+
         function showCard() {
-          if (index < data.length) {
-            let item = data[index];
+          if (cardDeck.length > 0) {
+            let item = cardDeck[0];
             let value = item.value;
             let explanation = item.explanation;
             document.getElementById('card').innerHTML = `
@@ -32,16 +33,23 @@ document.addEventListener('DOMContentLoaded', () => {
             let value = document.getElementById('card').querySelector('strong').innerText;
             let explanation = document.getElementById('card').querySelector('.explanation').innerText;
             document.getElementById(category).innerHTML += `
-              <div class="card">
+              <div class="card" onclick="moveToTopDeck(this, '${category}')">
                 <strong>${value}</strong>
                 <div class="explanation">${explanation}</div>
               </div>
             `;
-            index++;
+            cardDeck.shift(); // Remove the first card from the deck
             showCard();
           }
+        };
+
+        window.moveToTopDeck = (cardElement, category) => {
+          let value = cardElement.querySelector('strong').innerText;
+          let explanation = cardElement.querySelector('.explanation').innerText;
+          cardDeck.unshift({ value, explanation });
+          cardElement.remove();
+          showCard();
         };
       })
       .catch(error => console.error('Error loading JSON:', error));
   });
-  
